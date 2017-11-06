@@ -1,0 +1,136 @@
+.patternOne {
+  height: 300px;
+  background: linear-gradient(90deg, rgba(200, 0, 0, .4) 50%, transparent 0),
+              linear-gradient(rgba(200, 0, 0, .4) 50%, transparent 0)
+              black;
+  background-size: 30px 30px;
+}
+.patternTwo {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternTwo div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(255,255,255,.3) 1px, transparent 0),
+              linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 0);
+  background-size: 2px 2px;
+
+}
+.patternThree {
+  margin: 30px 0;
+  height: 300px;
+  background: linear-gradient(white 2px, transparent 0),
+              linear-gradient(90deg, white 2px, transparent 0),
+              linear-gradient(hsla(0, 0%, 100%, .3) 1px, transparent 0),
+              linear-gradient(90deg, hsla(0, 0%, 100%, .3) 1px, transparent 0)
+              #58a;
+  background-size: 75px 75px, 75px 75px,
+                   15px 15px, 15px 15px;
+}
+
+.patternFour {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternFour div {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(black 1px, transparent 0);
+  background-size: 4px 4px;
+
+}
+
+.patternFive {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternFive div {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(0,0,0,.3) 1px, transparent 0) 0 0,
+              radial-gradient(rgba(0,0,0,.3) 1px, transparent 0) 2px 2px;
+  background-size: 4px 4px;
+
+}
+
+.patternSix {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternSix div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #bbb 1px, transparent 0) 0 0,
+              linear-gradient(45deg, transparent 99px, #bbb 0) 2px 2px,
+              linear-gradient(45deg, #bbb 1px, transparent 0) 2px 2px,
+              linear-gradient(45deg, transparent 99px, #bbb 0) 4px 4px;
+  background-size: 4px 4px;
+
+}
+
+.patternSeven {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternSeven div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0,0,0,.4) 1px, transparent 0) 0 0,
+  linear-gradient(45deg, transparent 99px, rgba(0,0,0,.4)) 1px 1px,
+  linear-gradient(45deg, rgba(0,0,0,.4) 1px, transparent 0) 1px 1px,
+  linear-gradient(45deg, transparent 99px, rgba(0,0,0,.4) 0) 2px 2px;
+  background-size: 2px 2px;
+
+}
+
+.patternEight {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternEight div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #bbb 25%, transparent 0) 0 0,
+              linear-gradient(45deg, transparent 75%, #bbb 0) 15px 15px,
+              linear-gradient(45deg, #bbb 25%, transparent 0) 15px 15px,
+              linear-gradient(45deg, transparent 75%, #bbb 0) 30px 30px;
+  background-size: 30px 30px;
+
+}
+.patternNine {
+  margin: 30px 0;
+  height: 300px;
+  background: url(service-1.jpg);
+  background-size: cover;
+
+}
+.patternNine div {
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill-opacity=".25" >\
+            <rect x="50" width="50" height="50" />\
+            <rect y="50" width="50" height="50" />\
+            </svg>');
+  background-size: 2px 2px;
+
+}

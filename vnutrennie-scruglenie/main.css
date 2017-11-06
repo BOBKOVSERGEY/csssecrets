@@ -1,0 +1,9 @@
+.blockOne {
+  background: #655;
+  padding: .8em;
+}
+.blockOne > div {
+  background: tan;
+  padding: 1em;
+  border-radius: .8em;
+}
