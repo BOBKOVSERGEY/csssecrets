@@ -1,0 +1,52 @@
+.skewOne {
+  display: inline-block;
+  padding: 10px 30px;
+  background: green;
+  color: #fff;
+  transform: skew(-45deg);
+  margin-left: 20px;
+}
+.skewOne span {
+  display: inline-block;
+  transform: skew(45deg);
+}
+
+.skewTwo {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background: transparent;
+  margin-left: 20px;
+  color: #fff;
+}
+.skewTwo:before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: #58a;
+  transform: skewX(-45deg);
+}
+.picture {
+  margin: 50px;
+  width: 400px;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+.picture img {
+  max-width: 100%;
+  transform: rotate(-45deg);
+}
+
+.tom {
+  margin: 50px;
+  width: 400px;
+  overflow: hidden;
+  transform: rotate(45deg);
+}
+/*если убрать scale то получиттся 6 угольник*/
+.tom img {
+  max-width: 100%;
+  transform: rotate(-45deg) scale(1.42);
+}
+

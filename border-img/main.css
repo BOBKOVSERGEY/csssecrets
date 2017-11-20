@@ -1,0 +1,36 @@
+.something-mnf {
+  background: url(stone-art.jpg);
+  background-size: cover;
+  padding: 1em;
+}
+.something-mnf > div {
+  background: white;
+  padding: 1em;
+}
+.blockOne {
+  margin: 30px 0;
+  padding: 1em;
+  border: 1em solid transparent;
+  background: linear-gradient(white, white) padding-box, url(stone-art.jpg) border-box 0 / cover;
+}
+.blockTwo {
+  margin: 30px 0;
+  padding: 1em;
+  border: 1em solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 / 5em 5em;
+}
+@keyframes ants {to{background-position: 100%}}
+.blockTree {
+  padding: 1em;
+  border: 1px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              repeating-linear-gradient(-45deg, black 0, black 25%, white 0, white 50%)
+              0 / .6em .6em;
+  animation: ants 12s linear infinite;
+}
+.heading {
+  border-top: .2em solid transparent;
+  border-image: 100% 0 0 linear-gradient(90deg, green 4em, transparent 0);
+  padding-top: 1em;
+}

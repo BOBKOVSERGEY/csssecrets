@@ -1,0 +1,7 @@
+.one {
+  width: 260px;
+  height: 400px;
+  background: indigo;
+  background: linear-gradient(45deg, transparent 15px, indigo 0);
+
+}
