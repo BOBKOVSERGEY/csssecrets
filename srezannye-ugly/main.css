@@ -3,5 +3,18 @@
   height: 400px;
   background: indigo;
   background: linear-gradient(45deg, transparent 15px, indigo 0);
+}
 
+.two {
+  margin-top: 30px;
+  width: 260px;
+  height: 260px;
+  border: 20px solid red;
+  border-image: 1 url('data:image/svg+xml,\
+            <svg xmlns="http://www.w3.org/2000/svg" width="3" height="3" fill="%2358a" >\
+            <polygon points="0,1 1, 0 2, 0 3, 1 3, 2 2, 3 1, 3 0, 2" />\
+            </svg>');
+  background: red;
+  /*Запрещаем фону подлазить под рамку*/
+  background-clip: padding-box;
 }
