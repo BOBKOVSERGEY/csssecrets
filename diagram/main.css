@@ -1,0 +1,118 @@
+.pie {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: yellowgreen linear-gradient(to right, transparent 50%, #655 0);
+
+}
+.pie:before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  transform: rotate(.1turn);
+}
+
+.pieTwo {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: yellowgreen linear-gradient(to right, transparent 50%, #655 0);
+
+}
+.pieTwo:before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background: #655;
+  transform-origin: left;
+  transform: rotate(.1turn);
+}
+
+.pieThree{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: yellowgreen linear-gradient(to right, transparent 50%, #655 0);
+  margin: 100px 0;
+
+}
+.pieThree:before {
+  content: '';
+  display: block;
+  margin-left: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  animation: spin 3s linear infinite,
+             bg 6s step-end infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(.5turn);
+  }
+}
+@keyframes bg {
+  50% {
+    background: #655;
+  }
+}
+
+.pieNew {
+  position: relative;
+  width: 200px;
+  border-radius: 50%;
+  background: yellowgreen linear-gradient(to right, transparent 50%, #655 0);
+  border: 10px solid #ccc;
+  text-align: center;
+  line-height: 200px;
+  color: transparent;
+}
+.pieNew:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  border-radius: 0 100% 100% 0 / 50%;
+  background-color: inherit;
+  transform-origin: left;
+  animation: spinNew 50s linear infinite,
+  bgNew 100s step-end infinite;
+  animation-play-state: paused;
+  animation-delay: inherit;
+}
+
+@keyframes spinNew {
+  to {
+    transform: rotate(.5turn);
+  }
+}
+@keyframes bgNew {
+  50% {
+    background: #655;
+  }
+}
+svg {
+  transform: rotate(-90deg);
+  border-radius: 50%;
+  background: yellowgreen;
+}
+circle {
+  fill: yellowgreen;
+  stroke: #655;
+  stroke-width: 50;
+  stroke-dasharray: 0 158; /*2pi * 25*/
+  animation: fillup 5s linear infinite;
+}
+@keyframes fillup {
+  to {stroke-dasharray: 158 158;}
+}
