@@ -1,0 +1,45 @@
+.filter-one {
+  filter: sepia(1);
+
+  transition: all .3s ease;
+  margin: 30px;
+}
+
+.filter-one:hover {
+  filter: sepia(0);
+}
+
+
+.filter-two {
+  filter: saturate(4);
+  transition: all .3s ease;
+  margin: 30px;
+}
+
+.filter-three {
+  filter: hue-rotate(295deg);
+  transition: all .3s ease;
+  margin: 30px;
+}
+
+.filter-four {
+  display: block;
+  margin: 30px;
+  background: yellowgreen;
+  width: 300px;
+  height: 300px;
+}
+.filter-four img {
+  mix-blend-mode: luminosity;
+}
+
+.filter-five {
+  width: 300px;
+  height: 300px;
+  background: hsl(335, 100%, 50%) url(th.jpg) no-repeat;
+  background-blend-mode: luminosity;
+  transition: all .5s ease;
+}
+.filter-five:hover {
+  background-color: transparent;
+}
