@@ -1,8 +1,8 @@
 var bs = require("browser-sync").create();
 
-bs.watch(['filters/*.*', 'filters/css/*.*']).on("change", bs.reload);
+bs.watch(['effect-motirovannogo-stekla/*.*', 'effect-motirovannogo-stekla/css/*.*']).on("change", bs.reload);
 
 // Start a Browsersync proxy
 bs.init({
-  server: "./filters"
+  server: "./effect-motirovannogo-stekla"
 });
