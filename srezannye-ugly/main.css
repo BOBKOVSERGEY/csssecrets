@@ -5,6 +5,12 @@
   background: linear-gradient(45deg, transparent 15px, indigo 0);
 }
 
+.button {
+    padding: 15px 20px;
+    background: indigo;
+    background: linear-gradient(-45deg, transparent 15px, indigo 0);
+}
+
 .two {
   margin-top: 30px;
   width: 260px;

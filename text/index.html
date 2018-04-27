@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<dl>
+  <dt>Name</dt>
+  <dd>Lea Verou</dd>
+  <dt>Email</dt>
+  <dd>Lea Verou</dd>
+  <dt>Location</dt>
+  <dd>Lea Verou</dd>
+</dl>
+<pre>
+  <code>
+    while (true) {
+      var d = new Date();
+      if (d.getDate()==1 && d.getMonth()==3) {
+        alert("TROLOLOL");
+      }
+    }
+  </code>
+</pre>
+<code>
+  while (true) {
+  var d = new Date();
+  if (d.getDate()==1 &&
+  d.getMonth()==3) {
+  alert("TROLOLOL");
+  }
+  }
+</code>
+<div class="underline">
+  Lorem ipsum dolor sit amet.
+</div>
+
+<div class="text-effects">
+  Lorem ipsum dolor sit amet.
+</div>
+
+<div class="text-effects-two">
+  Lorem ipsum dolor sit amet.
+</div>
+<!--Сияющий текст-->
+<a href="" class="text-effects-three">
+  Lorem ipsum dolor sit amet.
+</a>
+
+<a href="" class="text-effects-four">
+  Lorem ipsum dolor sit amet.
+</a>
+<br>
+<br>
+<br>
+<br>
+<div class="circular">
+  circular reasoning works because
+</div>
+<br>
+<br>
+<br>
+<br>
+<script>
+  function $$(selector, context) {
+    context = context || document;
+    var elements = context.querySelectorAll(selector);
+    return Array.prototype.slice.call(elements);
+  }
+
+  $$('.circular').forEach(function(el) {
+    var NS = "http://www.w3.org/2000/svg";
+
+    var svg = document.createElementNS(NS, "svg");
+    svg.setAttribute("viewBox", "0 0 100 100");
+
+    var circle = document.createElementNS(NS, "path");
+    circle.setAttribute("d", "M0,50 a50,50 0 1,1 0,1z");
+    circle.setAttribute("id", "circle");
+
+    var text = document.createElementNS(NS, "text");
+    var textPath = document.createElementNS(NS, "textPath");
+    textPath.setAttributeNS("http://www.w3.org/1999/xlink", 'xlink:href', '#circle');
+    textPath.textContent = el.textContent;
+    text.appendChild(textPath);
+
+    svg.appendChild(circle);
+    svg.appendChild(text);
+
+    el.textContent = '';
+    el.appendChild(svg);
+  });
+</script>
+</body>
+</html>

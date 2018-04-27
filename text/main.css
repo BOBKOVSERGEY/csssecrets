@@ -1,0 +1,85 @@
+dd {
+  margin: 0;
+  font-weight: bold;
+}
+code, pre {
+  font-family: monospace;
+  line-height: 30px;
+}
+
+pre code {
+  display: block;
+  margin: 1em 0;
+  white-space: pre;
+  background: bisque;
+}
+
+.underline {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: hsl(210,13%,60%);
+  color: hsl(210, 13%, 30%);
+  text-shadow: 0 1px 1px hsla(0, 0%, 100%, .8);
+}
+.text-effects {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: hsl(210,13%,40%);
+  color: hsl(210, 13%, 75%);
+  text-shadow: 0 -1px 1px black;
+}
+
+.text-effects-two {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: deeppink;
+  color: white;
+  text-shadow: 1px 1px black, -1px -1px black,
+                1px -1px black, -1px 1px black;
+}
+
+.text-effects-three {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #203;
+  color: #ffc;
+  transition: 1s;
+}
+.text-effects-three:hover {
+  text-shadow: 0 0 .1em, 0 0 .3em;
+}
+
+.text-effects-four {
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #203;
+  color: #ffc;
+  transition: 1s;
+}
+.text-effects-four:hover {
+  filter: blur(.1em);
+}
+
+.circular {
+  width: 30em;
+  height: 30em;
+  margin: 4em auto 0;
+}
+
+.circular svg {
+  display: block;
+  overflow: visible;
+  transition: 10s linear transform;
+}
+
+.circular svg:hover { transform: rotate(-2turn); }
+
+.circular text { fill: currentColor }
+.circular path { fill: none; }
